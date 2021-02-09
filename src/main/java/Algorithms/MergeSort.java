@@ -124,7 +124,7 @@ public class MergeSort {
                 result[resultPointer++] = left[leftPointer++];
             }else if(rightPointer < right.length){
                 //if there are items only in the right array
-                result[resultPointer++] = right[rightPointer];
+                result[resultPointer++] = right[rightPointer++];
             }
         }
         System.out.println("Result Array: " + Arrays.toString(result));
@@ -132,7 +132,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] toSort = {5,4,3,2,1};
+        int[] toSort = {4,6,2,3,65,78,2,1,4,6,7,2,2,65,34,5,4,2,43,5,4,345,346,63,45,451,41,412,43,52,534,8888,534,63,4643,5,23,1234};
         System.out.println("Before sorting: " + Arrays.toString(toSort));
         int[] sorted = mergeSort(toSort);
         System.out.println("Sorted Array: " + Arrays.toString(sorted));
